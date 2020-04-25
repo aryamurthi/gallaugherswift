@@ -5,6 +5,10 @@ import ProjectRoll from '../components/ProjectRoll'
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 const ProjectsIndexPage =() => {
+  
+
+
+
       const data = useStaticQuery(graphql`
     query{
   allContentfulBlogPost{
@@ -15,8 +19,8 @@ const ProjectsIndexPage =() => {
     }
     }
   }
-  `);
-
+  `)
+    
     return (
       <Layout>
         <div
